@@ -330,7 +330,9 @@
   border-top: 3px solid #004b8d;
 }
 
-/* ====== RESPONSIVE ====== */
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* Tablet and smaller laptops (900px and below) */
 @media (max-width: 900px) {
   .cv-body {
     flex-direction: column;
@@ -339,5 +341,244 @@
   .left-side, 
   .right-side {
     width: 100%;
+  }
+
+  .right-side {
+    padding-top: 10px;
+  }
+
+  /* Adjust tech abilities to single column */
+  .tech-group {
+    width: 100%;
+  }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .cv-header {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+
+  .header-left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .portrait {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #003366;
+  }
+
+  .header-right h1 {
+    font-size: 2em;
+  }
+
+  .header-right h2 {
+    font-size: 1em;
+  }
+
+  /* Section content padding */
+  .section-content {
+    padding: 12px 15px;
+  }
+
+  /* Education layout adjustments */
+  .edu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+
+  .edu-text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .edu-logo {
+    align-self: center;
+  }
+
+  .edu-logo img {
+    width: 60px;
+  }
+
+  /* Language items stack better */
+  .language-item strong {
+    width: 100px;
+  }
+
+  .language-item span {
+    width: 100px;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  /* Header */
+  .cv-header {
+    padding: 20px 10px;
+  }
+
+  .portrait {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #003366;
+  }
+
+  .header-right h1 {
+    font-size: 1.6em;
+    letter-spacing: 1px;
+  }
+
+  .header-right h2 {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+
+  /* Body padding */
+  .left-side,
+  .right-side {
+    padding: 15px 10px;
+  }
+
+  /* Section headers */
+  .section-header {
+    padding: 8px 10px;
+  }
+
+  .section-header h2 {
+    font-size: 0.95em;
+  }
+
+  .section-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  /* Section content */
+  .section-content {
+    padding: 10px 12px;
+    font-size: 0.9em;
+  }
+
+  /* Language skills - stack vertically */
+  .language-item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+  }
+
+  .language-item strong {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .stars {
+    margin: 0 0 8px 0;
+  }
+
+  .language-item span {
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Tech abilities */
+  .tech-content {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .tech-content dt {
+    font-size: 0.95em;
+  }
+
+  .tech-content li {
+    font-size: 0.85em;
+  }
+
+  /* Education */
+  .education {
+    padding: 15px 10px;
+  }
+
+  .edu-text h3 {
+    font-size: 1em;
+  }
+
+  .edu-text p {
+    font-size: 0.85em;
+  }
+
+  .edu-logo img {
+    width: 50px;
+  }
+
+  /* Experience */
+  .experience {
+    padding: 15px 10px;
+  }
+
+  .exp-item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+  }
+
+  .exp-item h3 {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  .exp-year {
+    font-size: 0.95em;
+    margin: 5px 0 10px 0;
+  }
+
+  .exp-item p {
+    font-size: 0.85em;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .cv-footer {
+    height: 40px;
+    margin-top: 5px;
+  }
+
+  /* Contact info */
+  .contact-info p {
+    font-size: 0.9em;
+    word-break: break-word;
+  }
+}
+
+/* Very small devices (360px and below) */
+@media (max-width: 360px) {
+  .header-right h1 {
+    font-size: 1.4em;
+  }
+
+  .header-right h2 {
+    font-size: 0.8em;
+  }
+
+  .portrait {
+    width: 100px;
+    height: 100px;
+  }
+
+  .section-header h2 {
+    font-size: 0.85em;
+  }
+
+  .section-content {
+    font-size: 0.85em;
   }
 }
