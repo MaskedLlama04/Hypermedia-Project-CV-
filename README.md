@@ -28,3 +28,6 @@ For the visual design, I followed a clean and modern aesthetic with strong contr
 Typography was handled using the Poppins font to ensure clarity and a contemporary feel. Margins, paddings, and box shadows were applied carefully to create depth without visual overload. All icons and images were placed inside an images/ folder for neat organization.
 
 I also centered all section titles, aligned text blocks for visual harmony, and ensured the layout remains responsive for mobile users. The overall goal was to combine aesthetic appeal with functionality, resulting in a CV that feels personal, professional, and consistent with my identity as a computer engineering student.
+
+# Link to the Figma Project
+https://www.figma.com/design/I29Ys6dNTZ21s6FTtBeDSV/Pol-Ca%C3%B1adas-Costa--CV-?node-id=0-1&t=IH2cZgm13RiuTOMS-1 
