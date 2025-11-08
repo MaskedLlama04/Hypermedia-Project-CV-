@@ -50,21 +50,23 @@
   
   /* MAIN BODY SPLIT */
   .cv-body {
-    display: flex;
-    min-height: 100vh;
-  }
+  display: flex;
+  align-items: flex-start; /* ensures no forced equal height */
+  margin-bottom: 20px;     /* small, natural spacing before footer */
+}
+
   
   /* Left and Right halves */
   .left-side {
     width: 50%;
     background-color: #f5f5f5; /* Light gray */
-    padding: 40px 20px;
+    padding: 20px 20px;
   }
   
   .right-side {
     width: 50%;
     background-color: #ffffff; /* White */
-    padding: 40px 20px;
+    padding: 30px 20px;
   }
   
   /* ABOUT ME box only */
@@ -158,6 +160,39 @@
     height: 18px;
   }
   
+  .tech-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tech-group {
+  width: 48%; /* two columns */
+}
+
+.tech-content dt {
+  font-weight: 700;
+  font-size: 1em;
+  color: #003366;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.tech-content ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.tech-content li {
+  font-size: 0.95em;
+  color: #333;
+  line-height: 1.6;
+}
+
   /* Right side (level text) */
   .language-item span {
     width: 120px;
@@ -421,8 +456,12 @@
 .cv-footer {
   background: linear-gradient(to right, #0077b6, #00b4d8);
   height: 60px;             /* about half the header height */
-  margin-top: 40px;         /* space above footer */
+  margin-top: 10px;         /* space above footer */
   border-top: 3px solid #004b8d; /* optional accent line */
+}
+.left-side section:last-of-type,
+.right-side section:last-of-type {
+  margin-bottom: 0;
 }
 
   /* RESPONSIVE */
