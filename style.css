@@ -308,9 +308,14 @@ body {
 }
 
 .edu-logo img {
-  width: 70px;
+  width: 110px;
   height: auto;
-  object-fit: contain;
+  object-fit: contain; 
+  border: 1px solid #000000;      
+  border-radius: 6px;           
+  box-shadow: 0 0 4px rgba(0,0,0,0.08);
+  padding: 4px;                 
+  background-color: #fff;       
 }
 
 /* ====== EXPERIENCE SECTION ====== */
