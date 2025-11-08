@@ -81,7 +81,7 @@ body {
   padding: 30px 20px;
 }
 
-/* Remove bottom margin from last section in each side */
+/* Remove bottom margin from last section in each side, so there are no weird problems again */
 .left-side section:last-of-type,
 .right-side section:last-of-type {
   margin-bottom: 0;
@@ -147,17 +147,71 @@ body {
   margin-bottom: 30px;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-text {
+  flex: 1;
+}
+
 .contact-info p {
-  margin-bottom: 8px;
-  text-align: center;
+  margin-bottom: 10px;
+  text-align: left;
   font-size: 0.95em;
   font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.6;
 }
 
 .contact-info strong {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #003366;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.contact-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+.contact-github a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-github a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.contact-github img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  filter: grayscale(0%);
+  margin-bottom: 8px;
+}
+
+.contact-github p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #003366;
+  text-align: center;
+  margin: 0;
 }
 
 .contact-info a {
@@ -607,6 +661,19 @@ body {
   .contact-info p {
     font-size: 0.9em;
     word-break: break-word;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-github {
+    margin-top: 15px;
+  }
+
+  .contact-github img {
+    width: 60px;
+    height: 60px;
   }
 }
 
