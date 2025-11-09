@@ -2,7 +2,7 @@
 
 # Personal CV Website – Pol Cañadas Costa
 
-This is my personal online Curriculum Vitae, built entirely using HTML and CSS. The goal of this project was to create a responsive, visually appealing, and professional résumé that reflects both my personality and technical skills in web design and front-end structuring.
+This is my personal online Curriculum Vitae, built entirely using HTML and CSS. The goal of this project was to create a responsive, visually appealing, and professional résumé that reflects both my personality and technical skills in web design and front-end structuring. It can be seen on the "about" section of the repository, tho its this one: https://maskedllama04.github.io/Hypermedia-Project-CV-/ 
 
 # Project Analysis – User Profile
 
